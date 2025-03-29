@@ -88,7 +88,7 @@ def get_pokemon():
             print()
             for key, value in pokemon.items():
                 if isinstance(value, list):
-                    print(f"{Fore.YELLOW}{key}: {Fore.BLUE}{", ".join(value)}")
+                    print(f"{Fore.YELLOW}{key}: {Fore.BLUE}{', '.join(value)}")
                 elif isinstance(value, dict):
                     print(f"\n{Fore.YELLOW}{key}:")
                     for k, v in value.items():
